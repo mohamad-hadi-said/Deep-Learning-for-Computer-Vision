@@ -17,6 +17,7 @@
 - **الشبكات العصبية التلافيفية (Convolutional Neural Networks - CNNs):** طبقات التلافيف (*Conv Layers*)، التجميع (*Pooling Layers*)، ودوال التنشيط اللاخطية (*Activations* مثل ReLU و Leaky ReLU).
 - **تدريب وبناء المعماريات المتقدمة:** استراتيجيات التدريب العملية، التسوية بالدفعات (*Batch Normalization*)، الإسقاط (*Dropout*)، ونقل التعلم (*Transfer Learning*).
 - **معالجة البيانات المتتالية (Sequential Data & RNNs):** الشبكات العصبية المتكررة (*RNNs*)، شبكات *LSTM*، وتطبيقات توليد وصف للصور (*Image Captioning*).
+- **آليات الانتباه ومحولات الرؤية (Attention & Transformers):** آليات الانتباه (*Attention Mechanism*)، مصفوفات (*Query, Key, Value*)، الانتباه الذاتي ومتعدد الرؤوس (*Multi-Head Self-Attention*)، معمارية *Transformer*، ومحولات الرؤية للصور (*Vision Transformers - ViT*).
 
 ---
 
@@ -34,6 +35,7 @@
 | 📘 [lecture-5.md](file:///c:/Users/hadi/Desktop/Deep%20Learning%20for%20Computer%20Vision/lecture-5.md) | **المحاضرة 5: الشبكات التلافيفية (CNNs)** | حدود المصنفات الخطية، الحفاظ على البنية المكانية للصورة، المرشحات (Filters)، التلافيف (Convolutions)، الـ Stride والـ Padding، وطبقات التجميع (Pooling). |
 | 📘 [lecture-6.md](file:///c:/Users/hadi/Desktop/Deep%20Learning%20for%20Computer%20Vision/lecture-6.md) | **المحاضرة 6: بناء وتدريب شبكات CNN** | طبقات التسوية (Batch/Layer/Instance/Group Normalization)، الإسقاط (Dropout)، تهيئة الأوزان (Xavier/He Initialization)، واستراتيجيات نقل التعلم (Transfer Learning). |
 | 📘 [lecture-7.md](file:///c:/Users/hadi/Desktop/Deep%20Learning%20for%20Computer%20Vision/lecture-7.md) | **المحاضرة 7: الشبكات العصبية المتكررة (RNNs)** | نمذجة البيانات المتتالية (One-to-Many, Many-to-One, Many-to-Many)، بنية RNN و LSTM، الانتشار العكسي عبر الزمن (BPTT)، وتوليد وصف الصور (Image Captioning). |
+| 📘 [lecture-8.md](file:///c:/Users/hadi/Desktop/Deep%20Learning%20for%20Computer%20Vision/lecture-8.md) | **المحاضرة 8: آليات الانتباه والـ Transformers** | عائق عنق الزجاجة (Communication Bottleneck) في RNNs، آلية Attention والخطوات الرياضية، مفاهيم Query/Key/Value، الانتباه الذاتي (Self-Attention)، الانتباه متعدد الرؤوس (Multi-Head)، كتلة Transformer، ومحولات الرؤية (ViT). |
 | 🗺️ [خريطة-ذهنية.canvas](file:///c:/Users/hadi/Desktop/Deep%20Learning%20for%20Computer%20Vision/خريطة-ذهنية.canvas) | **خريطة ذهنية بصرية** | ملف خريطة بصرية تفاعلية معدة لتطبيق **Obsidian Canvas** تربط كافة مفاهيم الكورس بصرياً. |
 
 ---
@@ -48,6 +50,7 @@ flowchart TD
     D --> E["المحاضرة 5: أساسيات الشبكات التلافيفية (CNN Layers)"]
     E --> F["المحاضرة 6: تدريب وبناء شبكات CNN المتقدمة"]
     F --> G["المحاضرة 7: الشبكات المتكررة (RNNs) وتوليد وصف الصور"]
+    G --> H["المحاضرة 8: آليات الانتباه (Attention) والـ Transformers & ViT"]
 ```
 
 ---
