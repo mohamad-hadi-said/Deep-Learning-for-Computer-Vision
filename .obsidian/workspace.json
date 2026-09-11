@@ -11,17 +11,14 @@
             "id": "22ae53ebc6c72db6",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "خريطة-ذهنية.canvas",
-                "viewState": {
-                  "x": 1856.751299609519,
-                  "y": 1639.039948835958,
-                  "zoom": -1.9657276640513266
-                }
+                "file": "lecture-10.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "خريطة-ذهنية"
+              "icon": "lucide-file",
+              "title": "lecture-10"
             }
           }
         ]
@@ -193,11 +190,12 @@
   },
   "active": "22ae53ebc6c72db6",
   "lastOpenFiles": [
-    "README.md",
+    "lecture-9.md",
+    "lecture-8.md",
     "خريطة-ذهنية.canvas",
+    "README.md",
     "ملخص-الكورس-الكامل.md",
     "lectures.base",
-    "lecture-8.md",
     "lecture-7.md",
     "lecture-2.md",
     "lecture-1.md",
