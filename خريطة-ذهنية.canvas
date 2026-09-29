@@ -75,7 +75,16 @@
 		{"id":"l10c5","type":"text","text":"Two-Stream: فصل المظهر (RGB) عن الحركة (Optical Flow) لمنع Overfitting","x":2040,"y":2190,"width":250,"height":50},
 		{"id":"l10c6","type":"text","text":"I3D: نفخ أوزان 2D بالقسمة على KT للحفاظ على استجابة الفيديو الثابت","x":2040,"y":2255,"width":250,"height":50},
 		{"id":"l10c7","type":"text","text":"النماذج الحديثة: Space-Time Attention، Non-Local، و VideoMAE (إخفاء 90-95%)","x":2040,"y":2320,"width":250,"height":50},
-		{"id":"l10c8","type":"text","text":"مهام موسعة: TAL، أنابيب الأفعال، والفهم السمعي-البصري (Audio-Visual)","x":2040,"y":2385,"width":250,"height":50}
+		{"id":"l10c8","type":"text","text":"مهام موسعة: TAL، أنابيب الأفعال، والفهم السمعي-البصري (Audio-Visual)","x":2040,"y":2385,"width":250,"height":50},
+		{"id":"l11","type":"text","text":"## المحاضرة 11\nالتدريب الموزع واسع النطاق (Distributed Training)","x":480,"y":2290,"width":260,"height":90,"color":"3"},
+		{"id":"l11c1","type":"text","text":"عتاد GPUs: H100 و 80GB HBM3 وهرمية الذاكرة والتصنيف (Binning: 132 SMs)","x":40,"y":2060,"width":240,"height":50},
+		{"id":"l11c2","type":"text","text":"أنوية التنسور: 4096 FLOPs/cycle مقابل 256 لـ FP32 وحتمية الدقة المختلطة","x":40,"y":2125,"width":240,"height":50},
+		{"id":"l11c3","type":"text","text":"هرمية العناقيد: 24K بطاقة كحاسوب عملاق وتدهور سرعة الاتصال (NVLink vs Network)","x":40,"y":2190,"width":240,"height":50},
+		{"id":"l11c4","type":"text","text":"أبعاد التوازي الأربعة في Transformer: بُعد الدفعة والطبقات والسياق والمصفوفات","x":40,"y":2255,"width":240,"height":50},
+		{"id":"l11c5","type":"text","text":"DP التقليدي: خطية التدرجات و All-Reduce وعنق زجاجة استهلاك الذاكرة (10B limit)","x":40,"y":2320,"width":240,"height":50},
+		{"id":"l11c6","type":"text","text":"FSDP و HSDP: تجزئة الأوزان محلياً وتناغم الـ 2D مع طوبولوجيا الشبكة","x":40,"y":2385,"width":240,"height":50},
+		{"id":"l11c7","type":"text","text":"نقاط فحص التنشيط (Activation Checkpointing): حساب O(N√N) وذاكرة O(√N)","x":40,"y":2450,"width":240,"height":50},
+		{"id":"l11c8","type":"text","text":"كفاءة الحوسبة MFU (بوصلة التدريب) و 4D Parallelism في Llama 3 405B","x":40,"y":2515,"width":240,"height":50}
 	],
 	"edges":[
 		{"id":"e-c-l1","fromNode":"center","fromSide":"left","toNode":"l1","toSide":"right"},
@@ -88,6 +97,7 @@
 		{"id":"e-c-l6","fromNode":"center","fromSide":"right","toNode":"l6","toSide":"left"},
 		{"id":"e-c-l8","fromNode":"center","fromSide":"right","toNode":"l8","toSide":"left"},
 		{"id":"e-c-l10","fromNode":"center","fromSide":"right","toNode":"l10","toSide":"left"},
+		{"id":"e-c-l11","fromNode":"center","fromSide":"left","toNode":"l11","toSide":"right"},
 		{"id":"e-l1-l1c1","fromNode":"l1","fromSide":"left","toNode":"l1c1","toSide":"right"},
 		{"id":"e-l1-l1c2","fromNode":"l1","fromSide":"left","toNode":"l1c2","toSide":"right"},
 		{"id":"e-l1-l1c3","fromNode":"l1","fromSide":"left","toNode":"l1c3","toSide":"right"},
@@ -152,6 +162,14 @@
 		{"id":"e-l10-l10c5","fromNode":"l10","fromSide":"right","toNode":"l10c5","toSide":"left"},
 		{"id":"e-l10-l10c6","fromNode":"l10","fromSide":"right","toNode":"l10c6","toSide":"left"},
 		{"id":"e-l10-l10c7","fromNode":"l10","fromSide":"right","toNode":"l10c7","toSide":"left"},
-		{"id":"e-l10-l10c8","fromNode":"l10","fromSide":"right","toNode":"l10c8","toSide":"left"}
+		{"id":"e-l10-l10c8","fromNode":"l10","fromSide":"right","toNode":"l10c8","toSide":"left"},
+		{"id":"e-l11-l11c1","fromNode":"l11","fromSide":"left","toNode":"l11c1","toSide":"right"},
+		{"id":"e-l11-l11c2","fromNode":"l11","fromSide":"left","toNode":"l11c2","toSide":"right"},
+		{"id":"e-l11-l11c3","fromNode":"l11","fromSide":"left","toNode":"l11c3","toSide":"right"},
+		{"id":"e-l11-l11c4","fromNode":"l11","fromSide":"left","toNode":"l11c4","toSide":"right"},
+		{"id":"e-l11-l11c5","fromNode":"l11","fromSide":"left","toNode":"l11c5","toSide":"right"},
+		{"id":"e-l11-l11c6","fromNode":"l11","fromSide":"left","toNode":"l11c6","toSide":"right"},
+		{"id":"e-l11-l11c7","fromNode":"l11","fromSide":"left","toNode":"l11c7","toSide":"right"},
+		{"id":"e-l11-l11c8","fromNode":"l11","fromSide":"left","toNode":"l11c8","toSide":"right"}
 	]
 }

@@ -20,6 +20,7 @@
 - **آليات الانتباه ومحولات الرؤية (Attention & Transformers):** آليات الانتباه (*Attention Mechanism*)، مصفوفات (*Query, Key, Value*)، الانتباه الذاتي ومتعدد الرؤوس (*Multi-Head Self-Attention*)، معمارية *Transformer*، ومحولات الرؤية للصور (*Vision Transformers - ViT*).
 - **مهام الرؤية المتقدمة وتفسير النماذج (Detection, Segmentation & Interpretability):** التجزئة الدلالية (*Semantic Segmentation* مثل FCN و U-Net)، كشف وتحديد الأجسام (*Object Detection* مثل Faster R-CNN و YOLO و DETR)، التجزئة النسقية (*Instance Segmentation* مثل Mask R-CNN)، وتقنيات تفسير قرارات الشبكات (*Saliency Maps, CAM, Grad-CAM*).
 - **فهم الفيديو والتعلم المكاني-الزمني (Video Understanding & Spatiotemporal Learning):** تمثيل الفيديو 4D، استراتيجيات الدمج (*Early, Late, Slow Fusion*)، التلافيف ثلاثية الأبعاد (*3D CNNs / C3D*)، شبكات المجرى الثنائي والتدفق البصري (*Two-Stream & Optical Flow*)، نفخ المعماريات والأوزان (*I3D*)، ومحولات الفيديو الحديثة (*Space-Time Transformers & VideoMAE*).
+- **التدريب الموزع واسع النطاق (Large Scale Distributed Training):** تشريح عتاد الـ GPUs (H100 و Tensor Cores والدقة المختلطة)، بنية مراكز البيانات وشبكات الاتصال، أبعاد التوازي في المحولات (Data, Tensor, Pipeline, Context Parallelism)، توازي البيانات كامل التجزئة (FSDP)، التوازي الهجين (HSDP)، نقاط فحص التنشيط (Activation Checkpointing)، مقاييس الكفاءة (HFU vs MFU)، وهندسة التوازي رباعي الأبعاد (4D Parallelism في Llama 3 405B).
 
 ---
 
@@ -40,6 +41,7 @@
 | 📘 [lecture-8.md](file:///c:/Users/hadi/Desktop/Deep%20Learning%20for%20Computer%20Vision/lecture-8.md) | **المحاضرة 8: آليات الانتباه والـ Transformers** | عائق عنق الزجاجة (Communication Bottleneck) في RNNs، آلية Attention والخطوات الرياضية، مفاهيم Query/Key/Value، الانتباه الذاتي (Self-Attention)، الانتباه متعدد الرؤوس (Multi-Head)، كتلة Transformer، ومحولات الرؤية (ViT). |
 | 📘 [lecture-9.md](file:///c:/Users/hadi/Desktop/Deep%20Learning%20for%20Computer%20Vision/lecture-9.md) | **المحاضرة 9: كشف الأجسام والتجزئة وتفسير النماذج** | مهام الرؤية المتقدمة، تحسينات Transformers الحديثة (Pre-Norm, RMSNorm, SwiGLU, MoE)، التجزئة الدلالية (FCN, U-Net)، كشف الأجسام (Faster R-CNN, YOLO, DETR)، التجزئة النسقية (Mask R-CNN)، وتفسير قرارات النموذج (Grad-CAM, Saliency Maps). |
 | 📘 [lecture-10.md](file:///c:/Users/hadi/Desktop/Deep%20Learning%20for%20Computer%20Vision/lecture-10.md) | **المحاضرة 10: فهم الفيديو والتعلم المكاني-الزمني** | تمثيل الفيديو 4D، التحديات الحسابية والتقليص، استراتيجيات الدمج (Early/Late/Slow Fusion)، التلافيف ثلاثية الأبعاد (3D CNNs / C3D)، المجرى الثنائي (Two-Stream) والتدفق البصري (Optical Flow)، نفخ الشبكات (I3D)، ومحولات الزمكان (Space-Time Transformers & VideoMAE). |
+| 📘 [lecture-11.md](file:///c:/Users/hadi/Desktop/Deep%20Learning%20for%20Computer%20Vision/lecture-11.md) | **المحاضرة 11: التدريب الموزع واسع النطاق** | عتاد GPUs و Tensor Cores، هرمية عناقيد مراكز البيانات، أبعاد التوازي الأربعة (DP, TP, PP, CP)، خوارزميات FSDP و HSDP، نقاط فحص التنشيط، مقاييس HFU/MFU، وحالة دراسة Llama 3 405B على 16,000 بطاقة. |
 | 🗺️ [خريطة-ذهنية.canvas](file:///c:/Users/hadi/Desktop/Deep%20Learning%20for%20Computer%20Vision/خريطة-ذهنية.canvas) | **خريطة ذهنية بصرية** | ملف خريطة بصرية تفاعلية معدة لتطبيق **Obsidian Canvas** تربط كافة مفاهيم الكورس بصرياً. |
 
 ---
@@ -57,6 +59,7 @@ flowchart TD
     G --> H["المحاضرة 8: آليات الانتباه (Attention) والـ Transformers & ViT"]
     H --> I["المحاضرة 9: كشف الأجسام، التجزئة، وتفسير النماذج"]
     I --> J["المحاضرة 10: فهم الفيديو والتعلم المكاني-الزمني"]
+    J --> K["المحاضرة 11: التدريب الموزع واسع النطاق (Distributed Training)"]
 ```
 
 ---
